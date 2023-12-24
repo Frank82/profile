@@ -1,40 +1,55 @@
 body {
-  background: #000000;
-  color: #ffac41;
-  font-family: 'Bruno Ace', cursive;
-  font-size: 18.5px;
-  font-weight: lighter;
+  background-color: black;
 }
-h1, h2, h3 {
-  font-family: 'Bruno Ace', cursive;
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+
 }
-h1 {
-  color: #ffac41;
-  font-size: 32px;
-  font-weight: 900;
+
+.logo {
+  margin-left: 20px;
 }
-h2 {
-  color: #ffac41;
-  font-size: 20px;
-  font-weight: lighter;
-  font-weight: 500;
+
+/* MIDDLE LEFT */
+
+.middle {
+  display: flex;
+  width: 100%;
+
 }
-a {
-  font-family: 'Bruno Ace', cursive;
+
+.mid-left {
+  width: 50%;
+}
+
+.mid-left img {
+  display: flex;
+  align-items: center;
+  height: 800px;
+}
+
+/* MIDDLE RIGHT */
+
+.mid-right {
+  width: 50%;
+}
+
+
+.navbar-content a {
   text-decoration: none;
-  color: #4DAA57;
-  font-weight: 600;
-  font-size: 16px;
-}
-a:hover {
-  color: black;
-}
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+  color: aqua;
+  margin-right: 40px;
 
-
-/* Custom design with class (99% of your design) */
-.container {
-  width: 700px;
-  margin: 40px auto;
 }
 
 @media (max-width: 960px) {
@@ -54,48 +69,4 @@ a:hover {
   .container {
     width: 300px;
   }
-}
-
-.card-dark {
-  background-color: #323232;
-  padding: 40px;
-  box-shadow: 5px 5px 25px #ff1e56;
-  border-radius: 8px;
-  margin: 20px 0px;
-  text-align: center;
-}
-.img-circle {
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #a7d129;
-}
-.btn-red {
-  background-color: #b3133b;
-  color: #ffac41;
-  padding: 15px 20px;
-  border-radius: 10px;
-}
-.btn-red:hover {
-  background-color: rgb(34, 127, 34);
-  color: white;
-}
-.list-inline {
-  list-style: none;
-  padding-left: 0px;
-}
-
-.list-inline li {
-  display: inline;
-  padding: 10px;
-}
-.list-inline i {
-  font-size: 50px;
-  color: #ae1138;
-}
-.list-inline i:hover {
-  color: rgb(25, 143, 25);
-}
-
-/* Design adjustments using id (1% design remaining) */
-#introduction p {
-  margin-bottom: 40px;
 }
